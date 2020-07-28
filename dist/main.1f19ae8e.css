@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*overflow: hidden;*/
+}
+::before,::after{
+box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+body>.page{
+    display: flex;
+    flex-wrap: wrap;
+}
+body>.page>section{
+    width: 50vw;
+    height: 50vh;
+    border: black solid 1px;
+}
+#app1{}
+#app1 button{
+ width: 30px;
+    height: 20px;
+}
+
+#app2 .tabBar{
+    display: flex;
+}
+#app2 .tabBar>li{
+    width: 50%;
+    border: 3px darkblue solid;
+}
+#app2 .tabBar>li.selected{
+    background-color: saddlebrown;
+}
+#app2 .content{
+    width: 100%;
+    height: auto;
+}
+#app2 .content > li{
+    display: none;
+}
+#app2 .content > li.active{
+    display: block;
+}
+#app3 {
+
+}
+#app3 .square{
+    border: 1px solid grey;
+    margin-top: 10vw;
+    margin-left: 10vw;
+    width: 10vw;
+    height: 10vw;
+    transition: transform 1s;
+}
+#app3 .square.active{
+    transform:translateX(15vw);
+}
+#app4 {
+}
+@keyframes change {
+    0% {
+        background: red;
+    }
+    100% {
+        background: blue;
+    }
+}
+#app4 .circle {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    border: 1px solid red;
+}
+#app4 .circle.active{
+    animation: change 1s infinite alternate linear;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

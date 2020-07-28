@@ -1,0 +1,20 @@
+#app2 .tabBar{
+    display: flex;
+}
+#app2 .tabBar>li{
+    width: 50%;
+    border: 3px darkblue solid;
+}
+#app2 .tabBar>li.selected{
+    background-color: saddlebrown;
+}
+#app2 .content{
+    width: 100%;
+    height: auto;
+}
+#app2 .content > li{
+    display: none;
+}
+#app2 .content > li.active{
+    display: block;
+}
